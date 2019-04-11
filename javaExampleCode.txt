@@ -27,7 +27,18 @@ public class HelloWorld {
     	for (int i=0; i < primeNumbers.length; i++) {
     		System.out.println(primeNumbers[i]);
     	}
-    	
+    
+    	String[] familyMembers = {"Gui", "Carol", "Celina"};
+    	for (String members : familyMembers){
+        	System.out.println(members);
+    	}
+    
+    	int x = 1;
+    	while (x <= 10) {
+          System.out.println(2 * x);
+          x++;
+    	}
+    
     	ArrayList<String> cars = new ArrayList<String>();
         cars.add("Volvo");
         cars.add("BMW");
@@ -35,6 +46,10 @@ public class HelloWorld {
         cars.add("Mazda");
     	System.out.println(cars.get(1));
         System.out.println(cars);
+
+        for (String carName : cars){
+			System.out.println(carName);
+        }
     
     	ArrayList<Integer> ages = new ArrayList<Integer>();
         ages.add(2);
